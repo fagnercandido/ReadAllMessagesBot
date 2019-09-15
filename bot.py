@@ -15,6 +15,6 @@ def send_start_message(message):
 
 @botRead.message_handler(func=lambda message: True)
 def get_handle_chats(message):
-    botRead.reply_to(message, message.chat.id)
+    botRead.reply_to(message, message.text)
 
 botRead.polling()
